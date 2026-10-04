@@ -22,9 +22,9 @@ jobs:
       - name: Configurar Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build e Push da Imagem 1.0
+      - name: Build e Push da Imagem 2.0
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ secrets.REGISTRY_USERNAME }}/minha-aplicacao:1.0
+          tags: ${{ secrets.REGISTRY_USERNAME }}/minha-aplicacao:2.0
